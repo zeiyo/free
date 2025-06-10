@@ -153,7 +153,7 @@ gotop_latest="$(curl -s https://api.github.com/repos/xxxserxxx/gotop/releases | 
     chronyc sourcestats -v
     chronyc tracking -v
     
-    wget -q https://raw.githubusercontent.com/zhets/sc/main/xray/bbr.sh &&  chmod +x bbr.sh && ./bbr.sh
+    wget -q https://raw.githubusercontent.com/gotza02/sc/main/xray/bbr.sh &&  chmod +x bbr.sh && ./bbr.sh
 
 function pasang_domain() {
 clear
@@ -172,7 +172,7 @@ read -p "   Subdomain: " pp
 echo "$pp" > /root/domain
 echo "IP=$pp" > /var/lib/xdxl/ipvps.conf
 elif [[ $host == "2" ]]; then
-wget -q https://raw.githubusercontent.com/zhets/free/main/cf.sh && chmod +x cf.sh && ./cf.sh
+wget -q https://raw.githubusercontent.com/gotza02/free/main/cf.sh && chmod +x cf.sh && ./cf.sh
 rm -f /root/cf.sh
 clear
 else
@@ -189,31 +189,31 @@ echo -e "$green          Install SSH                $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 clear
-wget https://raw.githubusercontent.com/zhets/free/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
+wget https://raw.githubusercontent.com/gotza02/free/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
 # install backup
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "$green          Install backup             $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
-wget https://raw.githubusercontent.com/zhets/sc/main/backup/set-br && chmod +x set-br.sh && ./set-br.sh
+wget https://raw.githubusercontent.com/gotza02/sc/main/backup/set-br && chmod +x set-br.sh && ./set-br.sh
 clear
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "$green          Install XRAY              $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 clear
-wget https://raw.githubusercontent.com/zhets/free/main/insxray.sh && chmod +x insxray.sh && ./insxray.sh
+wget https://raw.githubusercontent.com/gotza02/free/main/insxray.sh && chmod +x insxray.sh && ./insxray.sh
 clear
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "$green          Install Websocket             $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
-wget -O /usr/local/bin/ws-dropbear https://raw.githubusercontent.com/zhets/sc/main/sshws/dropbear-ws.py
-wget -O /usr/local/bin/ws-stunnel https://raw.githubusercontent.com/zhets/sc/main/sshws/ws-stunnel
+wget -O /usr/local/bin/ws-dropbear https://raw.githubusercontent.com/gotza02/sc/main/sshws/dropbear-ws.py
+wget -O /usr/local/bin/ws-stunnel https://raw.githubusercontent.com/gotza02/sc/main/sshws/ws-stunnel
 chmod +x /usr/local/bin/ws-dropbear
 chmod +x /usr/local/bin/ws-stunnel
 
-wget https://raw.githubusercontent.com/zhets/free/main/free.zip
+wget https://raw.githubusercontent.com/gotza02/free/main/free.zip
 unzip free.zip
 chmod +x menu/*
 mv menu/* /usr/local/sbin/
